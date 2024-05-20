@@ -90,4 +90,4 @@ sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5
 </details>  
 
 
-###### 更多参考PDF [text](getting-started-with-pico.pdf) 文档
+###### 更多参考PDF [getting-started-with-pico.pdf](getting-started-with-pico.pdf) 文档
