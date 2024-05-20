@@ -1,0 +1,1 @@
+# raspberry_pico_debug_with_a_second_pico
