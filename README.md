@@ -21,6 +21,19 @@ chmod +x pico_setup.sh
 ./pico_setup.sh
 ```
 
+###### 脚本将:
+* Create a directory called `pico`
+* Install required dependencies
+* Download the `pico-sdk`, `pico-examples`, `pico-extras`, and `pico-playground` repositories
+* Define `PICO_SDK_PATH`, `PICO_EXAMPLES_PATH`, `PICO_EXTRAS_PATH`, and `PICO_PLAYGROUND_PATH` in your ~/.bashrc
+* Build the `blink` and `hello_world` examples in `pico-examples/build/blink` and `pico-examples/build/hello_world`
+* Download and build `picotool` (see [getting-started-with-pico.pdf](getting-started-with-pico.pdf) Appendix B), and copy it to `/usr/local/bin.`
+* Download and build `debugprobe` (see [getting-started-with-pico.pdf](getting-started-with-pico.pdf) Appendix A).
+* Download and compile OpenOCD (for debug support)
+* Download and install `Visual Studio Code`
+* Install the required Visual Studio Code extensions (see [getting-started-with-pico.pdf](getting-started-with-pico.pdf) Chapter 7 for more details)
+* Configure the Raspberry Pi UART for use with Raspberry Pi Pico  
+
 ###### 4.安装成功后，重新启动
 ```
 sudo reboot
