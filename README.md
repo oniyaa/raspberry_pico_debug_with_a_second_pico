@@ -120,13 +120,10 @@ sudo openocd -f openocd.cfg
 ![](Screenshot_OPENOCD_RUN.png)  
 * ###### 6. 点击 Start Debugging（ VSCODE -- 左侧DEBUG -- 左上绿色三角形 ）  
 * ###### 7. 点击 Continue 按钮 (出现 调试工具栏 的第二个按钮)  
-![](Screenshot_DEBUG.png)  
+![](Screenshot_DEBUG_SETTING12.png)  
 * ###### Pico 灯 将闪烁  
-###### 更改 CMAKE 的 DEBUG 配置，即可调试其他实例  
-* ###### 8. 更改 CMAKE -- Debug -- blink 为 hello_serial  
-* ###### 9. 点击 Stop 按钮（调试工具栏 的第七个按钮）  
-* ###### 10. 点击 Start Debugging（ VSCODE -- 左侧DEBUG -- 左上绿色三角形 ）  
-* ###### 11. 点击`Continue按钮` (出现 调试工具栏 的第二个按钮)  
+
+
 * ###### 12. 安装`minicom`  
 ```
 sudo apt install minicom
