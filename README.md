@@ -19,7 +19,7 @@ sudo apt-get update
 sudo apt-get install pkg-config
 ```
 
-###### 3. 执行脚本
+###### 3. 下载树莓派官方实例、SDK
 
 ```
 ./pico_setup.sh
