@@ -104,30 +104,34 @@ sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5
 
 <details>
 <summary>VSCODE DEBUG</summary>
-* ###### 1. 下载 `vscode_pico_example`
-* ###### 2. 用 VSCODE 打开 `vscode_pico_example`
-* ###### 3. 安装 `cmake tool`
-* ###### 4. 按`图2`配置CMAKE
+  
+* ###### 1. 下载 `vscode_pico_example`  
+* ###### 2. 用 VSCODE 打开 `vscode_pico_example`  
+* ###### 3. 安装 `cmake tool`  
+* ###### 4. 配置CMAKE
+  ###### * 1. 配置 Configure（default cmake_vscode_pico_example）
+  ###### * 2. 配置 Build (Default)
+  ###### * 3. 配置 Debug (Blink)
 ![图2](Screenshot_CMAKE_SETTING.png)  
-* ###### 5. 开启openOCD，如`图3`
+* ###### 5. 开启openOCD  
 ```
 sudo openocd -f openocd.cfg
 ```
-![图3](Screenshot_OPENOCD_RUN.png)  
-* ###### 6. 点击 Start Debugging（ VSCODE -- 左侧DEBUG -- 左上绿色三角形 ）
-* ###### 7. 点击 Continue 按钮 (出现 调试工具栏 的第二个按钮)
-![图4](Screenshot_DEBUG.png)
-* ###### Pico 灯 将闪烁
-###### 更改 CMAKE 的 DEBUG 配置，即可调试其他实例
-* ###### 8. 更改 CMAKE -- Debug -- blink 为 hello_serial
-* ###### 9. 点击 Stop 按钮（调试工具栏 的第七个按钮）
-* ###### 10. 点击 Start Debugging（ VSCODE -- 左侧DEBUG -- 左上绿色三角形 ）
-* ###### 11. 点击`Continue按钮` (出现 调试工具栏 的第二个按钮)
-* ###### 12. 安装`minicom`
+![](Screenshot_OPENOCD_RUN.png)  
+* ###### 6. 点击 Start Debugging（ VSCODE -- 左侧DEBUG -- 左上绿色三角形 ）  
+* ###### 7. 点击 Continue 按钮 (出现 调试工具栏 的第二个按钮)  
+![](Screenshot_DEBUG.png)  
+* ###### Pico 灯 将闪烁  
+###### 更改 CMAKE 的 DEBUG 配置，即可调试其他实例  
+* ###### 8. 更改 CMAKE -- Debug -- blink 为 hello_serial  
+* ###### 9. 点击 Stop 按钮（调试工具栏 的第七个按钮）  
+* ###### 10. 点击 Start Debugging（ VSCODE -- 左侧DEBUG -- 左上绿色三角形 ）  
+* ###### 11. 点击`Continue按钮` (出现 调试工具栏 的第二个按钮)  
+* ###### 12. 安装`minicom`  
 ```
 sudo apt install minicom
 ```
-* ###### 13. 监听ACM0端口
+* ###### 13. 监听ACM0端口  
 ```
 sudo minicom -D /dev/ttyACM0
 ```
