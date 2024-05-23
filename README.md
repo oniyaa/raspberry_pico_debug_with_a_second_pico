@@ -112,7 +112,7 @@ sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5
   ###### * 1. 配置 Configure（default cmake_vscode_pico_example）
   ###### * 2. 配置 Build (Default)
   ###### * 3. 配置 Debug (Blink)
-![图2](Screenshot_CMAKE_SETTING.png)  
+![图2](Screenshot_CMAKE_SETTING_123.png)  
 * ###### 5. 开启openOCD  
 ```
 sudo openocd -f openocd.cfg
