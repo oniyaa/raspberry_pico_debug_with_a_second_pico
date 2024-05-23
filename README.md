@@ -3,23 +3,25 @@
 ## 1. 环境安装
 -----
 
-###### 1. 下载安装脚本
+###### 1. 下载安装脚本，更改为可执行文件
 
 ```
 wget https://raw.githubusercontent.com/raspberrypi/pico-setup/master/pico_setup.sh
 ```
-
-###### 2. 更改为可执行文件
-
 ```
 chmod +x pico_setup.sh
+```
+
+###### 2. 更新pkg
+
+```
+sudo apt-get update
+sudo apt-get install pkg-config
 ```
 
 ###### 3. 执行脚本
 
 ```
-sudo apt-get update
-sudo apt-get install pkg-config
 ./pico_setup.sh
 ```
 
