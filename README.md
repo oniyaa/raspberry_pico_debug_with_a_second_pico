@@ -18,6 +18,8 @@ chmod +x pico_setup.sh
 ###### 3. 执行脚本
 
 ```
+sudo apt-get update
+sudo apt-get install pkg-config
 ./pico_setup.sh
 ```
 
