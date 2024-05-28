@@ -41,7 +41,7 @@ sudo reboot
 
 ## 2. 按图连接条线 （左 Pico A，右 Pico B）
 -------------
-![alt text](PICO_A_TO_PICO_B.png)
+![alt text](img/pico-a_to_pico-b.png)
 
 ## 3. 将debugprobe固件写入 Pico A
 ----------------
@@ -111,16 +111,16 @@ sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5
 ###### * 1. 配置 Configure（default cmake_vscode_pico_example）
 ###### * 2. 配置 Build (Default)
 ###### * 3. 配置 Debug (Blink)
-![图2](Screenshot_CMAKE_SETTING_123.png)  
+![图2](img/cmake_setting.png)  
 ###### 4. 启动 openOCD  
 ```
 sudo openocd -f openocd.cfg
 ```
-![](Screenshot_OPENOCD_RUN.png)  
+![](img/openocd_setting.png)  
 ###### 5. 调试 Pico B  
 * ###### 1. 点击 Start Debugging（VSCODE -- DEBUG -- 绿色三角形）  
 * ###### 2. 点击 Continue 按钮 (调试工具栏 -- 第二个按钮)  
-![](Screenshot_DEBUG_SETTING12.png)  
+![](img/debug_setting.png)  
 * ###### 3. Pico 灯 将闪烁
 * ###### 4. 点击 Stop 按钮，停止调试
 
@@ -137,7 +137,7 @@ sudo apt install minicom
 ```
 sudo minicom -D /dev/ttyACM0
 ```
-![图5](Screenshot_HELLOWORLD.png)  
+![图5](img/hello_serial.png)  
 
 
 
