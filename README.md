@@ -3,19 +3,23 @@
 ## 1. 环境安装
 -----
 
-###### 1. 下载安装脚本
+###### 1. 下载安装脚本，更改为可执行文件
 
 ```
 wget https://raw.githubusercontent.com/raspberrypi/pico-setup/master/pico_setup.sh
 ```
-
-###### 2. 更改为可执行文件
-
 ```
 chmod +x pico_setup.sh
 ```
 
-###### 3. 执行脚本
+###### 2. 更新pkg
+
+```
+sudo apt-get update
+sudo apt-get install pkg-config
+```
+
+###### 3. 下载树莓派官方实例、SDK
 
 ```
 ./pico_setup.sh
@@ -106,8 +110,8 @@ sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5
 ----------
   
 ###### 1. 下载 `vscode_pico_example`， 用 VSCODE 打开 `vscode_pico_example`  
-###### 2. 在VSCODE里安装 `cmake tool`  
-###### 3. 配置CMAKE
+###### 2. 在VSCODE里安装 `CMake Tools`  
+###### 3. 配置CMake Tools
 ###### * 1. 配置 Configure（default cmake_vscode_pico_example）
 ###### * 2. 配置 Build (Default)
 ###### * 3. 配置 Debug (Blink)
@@ -125,7 +129,7 @@ sudo openocd -f openocd.cfg
 * ###### 4. 点击 Stop 按钮，停止调试
 
 ###### 6. 调试hello_serial实例
-* ###### 1. `CMAKE` -- 设置 `Debug` 为 `hello_serial`
+* ###### 1. `CMake Tools` -- 设置 `Debug` 为 `hello_serial`
 * ###### 2. 重复步骤`5.调试 Pico`
 
 ###### 7. 监听 Serial 口
